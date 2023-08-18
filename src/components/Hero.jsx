@@ -19,8 +19,8 @@ function Hero() {
                 solusi canggih untuk membantu Anda mengubah tulisan-tulisan biasa menjadi karya yang lebih menarik dan orisinal.
               </p>
             </div>
-            <div className="order-1 lg:order-2 lg:w-[700px] w-[280px] lg:mx-auto mx-auto">
-              <Player style={{ width: "100%", height: "100%" }} autoplay loop src="https://lottie.host/69115990-9f45-4722-be9e-7bb0995e7938/Hl1PQO6hCu.json" background="transparent">
+            <div className="order-1 lg:order-2 lg:w-[700px] w-[280px] lg:mx-auto flex justify-center">
+              <Player className="lg:h-[400px] lg:w-[700px] w-[400px]" autoplay loop src="https://lottie.host/69115990-9f45-4722-be9e-7bb0995e7938/Hl1PQO6hCu.json" background="transparent">
                 <Controls visible={false} buttons={["play", "repeat", "frame", "debug"]} />
               </Player>
             </div>

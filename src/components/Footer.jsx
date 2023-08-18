@@ -7,7 +7,7 @@ function Footer() {
       <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
+            <a href="/" className="flex items-center mb-4 sm:mb-0">
               <Logo />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">araphrases</span>
             </a>

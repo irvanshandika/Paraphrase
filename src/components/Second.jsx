@@ -12,20 +12,15 @@ function SecondHero() {
       <section className="mt-10">
         <div className="container mx-auto px-5 py-5">
           <div className="py-1 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-12 lg:gap-16">
-            <div data-aos="fade-left" className="flex flex-col justify-center order-2 lg:order-2">
-              <h1 className="mb-4 text-4xl font-normal tracking-tight leading-none text-gray-900 dark:text-white md:text-5xl lg:text-6xl lg:text-left">
-                Selamat Datang Di
-                <span className="before:block before:absolute before:-inset-3 before:mt-4 before:-skew-y-3 before:bg-[#00D7FF] relative inline-block my-3 lg:my-3">
-                  <span className="relative text-white">Paraphrases</span>
-                </span>
-              </h1>
+            <div className="flex flex-col justify-center order-2 lg:order-2">
+              <h1 className="mb-4 text-4xl font-normal tracking-tight leading-none text-gray-900 dark:text-white md:text-5xl lg:text-6xl lg:text-left">Solusi Penghapusan Plagiarisme Online Secara Gratis</h1>
               <p className="mb-8 text-lg font-normal text-gray-500 dark:text-white lg:text-xl lg:text-left">
-                Platform inovatif yang membawa pengalaman merangkai teks ke level berikutnya! Kami percaya bahwa kata-kata memiliki kekuatan besar untuk menyampaikan pesan yang mendalam dan menginspirasi. Oleh karena itu, kami hadir dengan
-                solusi canggih untuk membantu Anda mengubah tulisan-tulisan biasa menjadi karya yang lebih menarik dan orisinal.
+                Sederhanakan proses penulisan dengan fitur paraphrase otomatis kami, yang mampu menghasilkan variasi kalimat dengan cepat dan akurat. Jangan khawatir tentang plagiarisme, karena Paraphrase telah dirancang dengan fokus pada
+                integritas akademis dan kreativitas.
               </p>
             </div>
-            <div data-aos="fade-right" className="order-1 lg:order-1 lg:w-[700px] w-[280px] lg:mx-auto mx-auto">
-              <Player style={{ width: "100%", height: "100%" }} autoplay loop src="https://lottie.host/69115990-9f45-4722-be9e-7bb0995e7938/Hl1PQO6hCu.json" background="transparent">
+            <div className="order-1 lg:order-1 lg:w-[400px] w-[280px] flex justify-center">
+              <Player className="lg:h-[300px] lg:w-[700px] w-[350px]" autoplay loop src="https://lottie.host/2b2381bf-c8bb-40d8-b975-5d565435ec0e/RJkjiRv6Il.json" background="transparent">
                 <Controls visible={false} buttons={["play", "repeat", "frame", "debug"]} />
               </Player>
             </div>
