@@ -9,14 +9,14 @@ import SlideLogo from "../components/SlideLogo";
 
 const MainPages = () => {
   return (
-    <div className="bg-gray-300 dark:bg-gray-900">
+    <>
       <Navbar />
       <Hero />
       <SecondHero />
       <Pricing />
       <Contact />
       <SlideLogo />
-    </div>
+    </>
   );
 };
 
