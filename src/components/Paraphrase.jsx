@@ -44,16 +44,37 @@ const Paraphrase = () => {
   };
 
   return (
-    <div>
-      <textarea className="w-full h-40 p-2 border border-gray-400 resize-none" placeholder="Masukkan teks yang ingin diparafrase..." value={originalText} onChange={handleChange}></textarea>
-      <button className="mt-2 px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600" onClick={handleParaphrase}>
-        Parafrasekan
-      </button>
-      <div className="mt-4">
-        <h2 className="text-xl font-bold">Hasil Parafrase:</h2>
-        <p className="mt-2 p-2 border border-gray-400 bg-gray-100 rounded">{paraphrasedText}</p>
+    <section className="mt-10">
+      <div className="container mx-auto px-5 py-5">
+        <div className="py-1 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="flex flex-col justify-center order-1 lg:order-1">
+            <h1 className="text-black dark:text-white mb-4 text-center bg-indigo-500 p-4 rounded-lg">Masukkin Text</h1>
+            <textarea
+              rows="10"
+              cols="80"
+              value={originalText}
+              onChange={handleChange}
+              placeholder="Masukkan teks yang ingin diparafrase..."
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+          </div>
+          <div className="order-3 lg:order-3 flex flex-col justify-center">
+            <h1 className="text-black dark:text-white mb-4 text-center bg-indigo-500 p-4 rounded-lg">Hasil</h1>
+            <textarea
+              rows="10"
+              cols="80"
+              disabled
+              value={paraphrasedText}
+              placeholder="Hasil Parafrase"
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <button className="bg-indigo-600 hover:bg-indigo-900 px-10 py-4 mt-4 rounded-md text-white" onClick={handleParaphrase}>
+            Parafrase
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
