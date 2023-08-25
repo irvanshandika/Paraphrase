@@ -1,0 +1,25 @@
+<div className="flex justify-center">
+      <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <textarea
+          rows="10"
+          cols="80"
+          value={originalText}
+          onChange={handleChange}
+          placeholder="Masukkan teks yang ingin diparafrase..."
+          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+        <button className="bg-indigo-600 hover:bg-indigo-900 p-4 mt-4 rounded-md text-white" onClick={handleParaphrase}>
+          Parafrase
+        </button>
+
+        <div className="mt-4">
+          <h2 className="text-xl font-bold dark:text-white mb-4">Hasil Parafrase:</h2>
+          <textarea
+            rows="10"
+            cols="80"
+            disabled
+            value={paraphrasedText}
+            placeholder="Masukkan teks yang ingin diparafrase..."
+            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+        </div>
+      </div>
+    </div>
